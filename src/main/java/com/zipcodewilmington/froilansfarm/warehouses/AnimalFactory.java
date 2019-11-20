@@ -1,4 +1,4 @@
-package com.zipcodewilmington.froilansfarm.warehouses.animalwarehouse;
+package com.zipcodewilmington.froilansfarm.warehouses;
 
 import com.zipcodewilmington.froilansfarm.animal.farmanimals.Chicken;
 import com.zipcodewilmington.froilansfarm.animal.farmanimals.Horse;
