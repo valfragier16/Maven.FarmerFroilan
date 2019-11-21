@@ -1,7 +1,25 @@
 package com.zipcodewilmington.froilansfarm.vehicles;
 
+import com.zipcodewilmington.froilansfarm.farm.field.CropRow;
+import com.zipcodewilmington.froilansfarm.farm.field.Crops;
+import com.zipcodewilmington.froilansfarm.farm.field.Field;
+
+import java.util.ArrayList;
+
+
 public class Tractor extends FarmVehicle{
-    public void harvest() {
+
+    public ArrayList<Crops> harvest(Field field) {
+        ArrayList<Crops> harvestedCrops = new ArrayList<Crops>();
+
+        for(CropRow row : field.getCropRow()){
+            for(Crops each : row.getCropsList()){
+                if(each.getIsFertilized())
+                     harvestedCrops.add(each);
+            }
+        }
+        return harvestedCrops;
+
 
     }
     public String makeNoise() {

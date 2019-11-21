@@ -4,17 +4,17 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CropRow {
-    private List<Crops> cropsList;
+    private ArrayList<Crops> cropsList;
 
     public CropRow(){
         cropsList = new ArrayList<Crops>();
     }
 
-    public CropRow(List<Crops> cropsList){
+    public CropRow(ArrayList<Crops> cropsList){
         this.cropsList = cropsList;
     }
 
-    public List<Crops> getCropsList(){
+    public ArrayList<Crops> getCropsList(){
         return this.cropsList;
     }
 

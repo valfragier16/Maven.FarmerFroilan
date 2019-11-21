@@ -6,6 +6,7 @@ import com.zipcodewilmington.froilansfarm.interfaces.Botanist;
 import com.zipcodewilmington.froilansfarm.interfaces.Rideable;
 import com.zipcodewilmington.froilansfarm.interfaces.Rider;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Farmer extends Person implements Botanist, Rider {
@@ -24,9 +25,11 @@ public class Farmer extends Person implements Botanist, Rider {
     }
 
 
-    public void plant(Crops crops, CropRow cropRows) {
-        List<Crops> cropsList = cropRows.getCropsList();
+    public ArrayList<Crops> plant(Crops crops, CropRow cropRows) {
+        ArrayList<Crops> cropsList = cropRows.getCropsList();
         cropsList.add(crops);
+
+        return cropsList;
     }
 
     public void mount(Rideable rideable ) {
