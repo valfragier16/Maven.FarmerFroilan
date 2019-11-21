@@ -1,8 +1,9 @@
 package com.zipcodewilmington.froilansfarm.animal.farmanimals;
 
+import com.zipcodewilmington.froilansfarm.animal.Animal;
 import com.zipcodewilmington.froilansfarm.farm.food.Egg;
 
-public class Chicken {
+public class Chicken extends Animal {
     private Egg edibleEgg;
     private Boolean fertilized;
 

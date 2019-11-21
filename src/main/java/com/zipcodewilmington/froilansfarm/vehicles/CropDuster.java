@@ -1,23 +1,23 @@
 package com.zipcodewilmington.froilansfarm.vehicles;
 
-import com.zipcodewilmington.froilansfarm.farm.field.Crop;
+
 import com.zipcodewilmington.froilansfarm.farm.field.CropRow;
-import com.zipcodewilmington.froilansfarm.interfaces.Aircraft;
+import com.zipcodewilmington.froilansfarm.farm.field.Crops;
+import com.zipcodewilmington.froilansfarm.farm.food.Crop;
 
 
+import java.util.ArrayList;
 
-import java.util.List;
 
-public class CropDuster extends FarmVehicle implements Aircraft {
-    public String makeNoise() {
-        return "Engine Roaring";
+public class CropDuster {
+
+    public CropDuster(){
+
     }
-
-    public void fertilize(CropRow cropRow) {
-        List<Crop> cropToFertilize =   cropRow.getCropList();
-        for(Crop c: cropToFertilize){
-            //c.setIsFertilized(true);
+    public void fertilizeCrop(ArrayList<CropRow> crops){
+        for(CropRow row: crops){
+            for(Crops each : row.getCropsList())
+                each.setIsFertilized(true);
         }
     }
-
 }

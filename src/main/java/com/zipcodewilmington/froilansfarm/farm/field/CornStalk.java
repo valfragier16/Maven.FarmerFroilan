@@ -2,10 +2,9 @@ package com.zipcodewilmington.froilansfarm.farm.field;
 
 import com.zipcodewilmington.froilansfarm.farm.food.Crop;
 import com.zipcodewilmington.froilansfarm.farm.food.EarCorn;
-import com.zipcodewilmington.froilansfarm.interfaces.Edible;
 
 
-public class CornStalk extends Crop {
+public class CornStalk extends Crops {
 
     public CornStalk(){
         super.setIsFertilized(false);
@@ -13,7 +12,7 @@ public class CornStalk extends Crop {
 
 
     @Override
-    public Edible yield(){
+    public Crops yield(){
         if (super.getIsFertilized()) {
             return new EarCorn();
         }

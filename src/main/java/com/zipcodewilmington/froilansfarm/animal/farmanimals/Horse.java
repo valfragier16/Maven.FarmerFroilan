@@ -1,8 +1,9 @@
 package com.zipcodewilmington.froilansfarm.animal.farmanimals;
 
+import com.zipcodewilmington.froilansfarm.animal.Animal;
 import com.zipcodewilmington.froilansfarm.interfaces.Rider;
 
-public class Horse {
+public class Horse extends Animal {
 
     private Boolean hasBeenRiddenToday;
 
@@ -24,7 +25,4 @@ public class Horse {
         return hasBeenRiddenToday;
     }
 
-    public void setHasBeenRiddenToday(Boolean hasBeenRiddenToday) {
-        this.hasBeenRiddenToday = hasBeenRiddenToday;
-    }
 }

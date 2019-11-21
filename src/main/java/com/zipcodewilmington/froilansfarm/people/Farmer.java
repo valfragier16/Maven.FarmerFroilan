@@ -1,6 +1,6 @@
 package com.zipcodewilmington.froilansfarm.people;
 
-import com.zipcodewilmington.froilansfarm.farm.field.Crop;
+import com.zipcodewilmington.froilansfarm.farm.field.Crops;
 import com.zipcodewilmington.froilansfarm.farm.field.CropRow;
 import com.zipcodewilmington.froilansfarm.interfaces.Botanist;
 import com.zipcodewilmington.froilansfarm.interfaces.Rideable;
@@ -24,9 +24,9 @@ public class Farmer extends Person implements Botanist, Rider {
     }
 
 
-    public void plant(Crop crop, CropRow cropRows) {
-        List<Crop> cropList = cropRows.getCropList();
-        cropList.add(crop);
+    public void plant(Crops crops, CropRow cropRows) {
+        List<Crops> cropsList = cropRows.getCropsList();
+        cropsList.add(crops);
     }
 
     public void mount(Rideable rideable ) {

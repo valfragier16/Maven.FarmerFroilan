@@ -4,7 +4,7 @@ package com.zipcodewilmington.froilansfarm.farm.field;
 import com.zipcodewilmington.froilansfarm.farm.food.Tomato;
 import com.zipcodewilmington.froilansfarm.farm.food.Crop;
 
-public class TomatoPlant extends Crop{
+public class TomatoPlant extends Crops{
     private Integer numberOfTomatoes;
 
     public TomatoPlant(){
@@ -27,8 +27,9 @@ public class TomatoPlant extends Crop{
     }
 
     @Override
-    public Tomato yield(){
+    public Crops yield(){
         if (numberOfTomatoes != 0 && super.getIsFertilized()) {
+            numberOfTomatoes--;
             return new Tomato();
         }
         return null;

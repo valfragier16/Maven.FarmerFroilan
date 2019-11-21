@@ -1,13 +1,13 @@
 package com.zipcodewilmington.froilansfarm.farm.food;
 
-import com.zipcodewilmington.froilansfarm.interfaces.Edible;
+import com.zipcodewilmington.froilansfarm.farm.field.Crops;
 import com.zipcodewilmington.froilansfarm.interfaces.Produce;
 
 public abstract class Crop implements Produce {
 
     private Boolean isFertilized;
 
-    public Edible yield() {
+    public Crops yield() {
         return null;
     }
 

@@ -28,4 +28,7 @@ public abstract class Animal {
         }
         return retVal;
     }
+    public Integer getAmountofFood(){
+        return foodEaten.size();
+    }
 }

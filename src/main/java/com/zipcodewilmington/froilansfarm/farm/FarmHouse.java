@@ -11,7 +11,7 @@ public class FarmHouse {
     private ArrayList<Person> people;
 
     public FarmHouse(){
-        people = new ArrayList<Person>();
+        this.people = new ArrayList<Person>();
     }
 
 
@@ -24,7 +24,8 @@ public class FarmHouse {
     }
 
     public Integer getCount() {
-        return people.size();
+        return this.people.size();
+
     }
 
     public Pilot getPilotFromFarm() {

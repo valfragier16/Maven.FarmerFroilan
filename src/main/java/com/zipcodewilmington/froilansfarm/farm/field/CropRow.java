@@ -4,33 +4,30 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CropRow {
-    private List<Crop> cropList;
+    private List<Crops> cropsList;
 
     public CropRow(){
-        cropList = new ArrayList<Crop>();
+        cropsList = new ArrayList<Crops>();
     }
 
-    public CropRow(List<Crop> cropList){
-        this.cropList = cropList;
+    public CropRow(List<Crops> cropsList){
+        this.cropsList = cropsList;
     }
 
-    public List<Crop> getCropList(){
-        return this.cropList;
+    public List<Crops> getCropsList(){
+        return this.cropsList;
     }
 
     public Integer getNumberOfCrops(){
-        if (cropList.size() != 0) {
-            return cropList.size();
-        }
-        return null;
+        return this.cropsList.size();
     }
 
-    public void add(Crop crop) {
-        cropList.add(crop);
+    public void add(Crops crops) {
+        cropsList.add(crops);
     }
 
     public void removeAll() {
-        cropList.clear();
+        cropsList.clear();
     }
 
 }
