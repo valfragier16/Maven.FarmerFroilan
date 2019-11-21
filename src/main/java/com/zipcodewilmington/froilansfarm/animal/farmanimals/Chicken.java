@@ -31,6 +31,6 @@ public class Chicken {
         return edibleEgg;
     }
 
-    public String makeNoise() { return "Cluck!"; }
+    public String makeNoise() { return "Bawk bawk!"; }
 
 }
