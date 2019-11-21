@@ -26,11 +26,7 @@ public class CropRow {
     }
 
     public void add(Crop crop) {
-        if(crop instanceof CornStalk) {
-            cropList.add(new CornStalk());
-        } else if (crop instanceof TomatoPlant) {
-            cropList.add(new TomatoPlant());
-        }
+        cropList.add(crop);
     }
 
     public void removeAll() {

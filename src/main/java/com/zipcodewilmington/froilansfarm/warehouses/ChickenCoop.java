@@ -39,7 +39,7 @@ public class ChickenCoop {
     }
 
     public static List<Egg> collectEdibleEggs(List<Chicken> chickenCoop) {
-        List<Egg> edibleEggs = new ArrayList<>();
+        List<Egg> edibleEggs = new ArrayList<Egg>();
         if (checkChickenFertilization(chickenCoop) == true) {
             for (Chicken c : chickenCoop) {
                 edibleEggs.add(c.yield());

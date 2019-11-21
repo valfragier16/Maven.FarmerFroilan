@@ -2,6 +2,7 @@ package com.zipcodewilmington.froilansfarm.farm.field;
 
 
 import com.zipcodewilmington.froilansfarm.farm.food.Tomato;
+import com.zipcodewilmington.froilansfarm.farm.food.Crop;
 
 public class TomatoPlant extends Crop{
     private Integer numberOfTomatoes;

@@ -1,5 +1,7 @@
 package com.zipcodewilmington.froilansfarm.warehouses;
 
+import com.zipcodewilmington.froilansfarm.farm.field.CropRow;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,66 +17,36 @@ public class Storage {
         return chickenCoops;
     }
 
-    public static ChickenCoop createSingleChickenCoop() {
-        ChickenCoop chickenCoop = createMultiChickenCoop(1).get(0);
 
-        return chickenCoop;
-    }
-
-    public static EggBasket createEggBasket(Integer amountOfEggs){
-        List<EggBasket> eggBasket = new ArrayList<>();
-
-        for(int i = 0; i < amountOfEggs; i++){
-            eggBasket.add(new EggBasket());
-        }
-        return (EggBasket) eggBasket;
-    }
-
-    public static ArrayList<CornSilo> createMultiCornSilos(Integer amount) {
-        ArrayList<CornSilo> cornSilos = new ArrayList<CornSilo>();
+    public static ArrayList<CropRow> createMultiCropRows(Integer amount) {
+        ArrayList<CropRow> cropRows = new ArrayList<CropRow>();
 
         for(int i = 0; i<amount; i++){
-            cornSilos.add(new CornSilo());
-        }
-
-        return cornSilos;
-    }
-
-    public static CornSilo createSingleCornSilo() {
-        CornSilo cornSilo = createMultiCornSilos(1).get(0);
-
-        return cornSilo;
-    }
-
-    public static ArrayList<CropRows> createMultiCropRows(Integer amount) {
-        ArrayList<CropRows> cropRows = new ArrayList<CropRows>();
-
-        for(int i = 0; i<amount; i++){
-            cropRows.add(new CropRows());
+            cropRows.add(new CropRow());
         }
 
         return cropRows;
     }
 
-    public static CropRows createSingleCropRow() {
-        CropRows cropRows = createMultiCropRows(1).get(0);
+    public static CropRow createSingleCropRow() {
+        CropRow cropRows = createMultiCropRows(1).get(0);
 
         return cropRows;
     }
 
 
-    public static ArrayList<Stables> createMultiStables(Integer amount) {
-        ArrayList<Stables> stables = new ArrayList<Stables>();
+    public static ArrayList<Stable> createMultiStables(Integer amount) {
+        ArrayList<Stable> stables = new ArrayList<Stable>();
 
         for(int i = 0; i<amount; i++){
-            stables.add(new Stables());
+            stables.add(new Stable());
         }
 
         return stables;
     }
 
-    public static Stables createSingleStables() {
-        Stables stables = createMultiStables(1).get(0);
+    public static Stable createSingleStables() {
+        Stable stables = createMultiStables(1).get(0);
 
         return stables;
     }
