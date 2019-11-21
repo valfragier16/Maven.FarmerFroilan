@@ -6,12 +6,8 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class CropDusterTest {
-
-    ArrayList<CropRow> field = new ArrayList<CropRow>();
+    Field field = new Field();
     @Before
     public void setUp(){
         CropRow row = new CropRow();
@@ -23,7 +19,7 @@ public class CropDusterTest {
         Field fields = new Field();
         fields.add(row);
 
-        field = fields.getCropRow();
+        field.add(row);
 
     }
 
@@ -31,9 +27,10 @@ public class CropDusterTest {
     public void fertilizerTest(){
         CropDuster cropDuster = new CropDuster();
 
-        cropDuster.fertilizeCrop(field);
+        cropDuster.fertilizeCrop(field.getCropRow());
 
-        Boolean check = field.get(0).getCropsList().get(0).getIsFertilized();
+        Boolean check = field.getCropRow().get(0).getCropsList().get(0).getIsFertilized();
+
 
         Assert.assertTrue(check);
 
