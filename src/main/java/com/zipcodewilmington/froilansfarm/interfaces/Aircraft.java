@@ -4,4 +4,6 @@ import com.zipcodewilmington.froilansfarm.farm.field.CropRow;
 
 public interface Aircraft {
     void fertilize(CropRow cropRows);
+    boolean fly();
+    boolean landAircraft();
 }

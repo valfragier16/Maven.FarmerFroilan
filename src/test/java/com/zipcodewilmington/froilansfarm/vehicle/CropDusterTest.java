@@ -34,6 +34,17 @@ public class CropDusterTest {
 
         Assert.assertTrue(check);
 
+    }
 
+    @Test
+    public void flyTest(){
+        CropDuster cropDuster = new CropDuster();
+        Assert.assertTrue(cropDuster.fly());
+    }
+
+    @Test
+    public void  landTest(){
+        CropDuster cropDuster = new CropDuster();
+        Assert.assertFalse(cropDuster.landAircraft());
     }
 }
