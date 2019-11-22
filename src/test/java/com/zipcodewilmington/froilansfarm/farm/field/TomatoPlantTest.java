@@ -63,5 +63,12 @@ public class TomatoPlantTest {
         Assert.assertEquals(expected, (Integer)crop.size());
     }
 
+    @Test
+    public void isfertilizeTest() {
+        Assert.assertFalse(tomatoPlant.getIsFertilized());
+        crops.getFertilized();
+        Assert.assertTrue(crops.getIsFertilized());
+        Assert.assertTrue(crops.getFruit().size() >= crops.getLowerBoundYield());
+        Assert.assertTrue(crops.getFruit().size() <= crops.getUpperBoundYield());
 
 }

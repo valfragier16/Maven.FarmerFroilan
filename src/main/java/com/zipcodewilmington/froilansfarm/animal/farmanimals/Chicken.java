@@ -8,7 +8,8 @@ public class Chicken extends Animal {
     private Boolean fertilized;
 
 
-    public Chicken(){ fertilized = false;}
+    public Chicken(){
+        fertilized = false;}
 
     public Boolean isFertilized() {
         return fertilized;
@@ -32,6 +33,7 @@ public class Chicken extends Animal {
         return edibleEgg;
     }
 
-    public String makeNoise() { return "Bawk bawk!"; }
+    public String makeNoise() {
+        return "Bawk bawk!"; }
 
 }
